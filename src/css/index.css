@@ -422,6 +422,7 @@ table {
 }
 
 .portfolio-img-container {
+	color: var(--black);
 	margin: 0 1em;
 	display: grid; 
 	grid-auto-columns: 1fr; 
@@ -685,5 +686,9 @@ table {
 
 	.portfolio-img {
 		width: 10em;
+	}
+
+	.underline {
+		text-decoration: underline;
 	}
 }
