@@ -60,6 +60,7 @@ table {
 	--blue: #5A92AB;
 	--red: #8E1B33;
 	--black: #000000;
+	--link-hover: #B89461;
 }
 
 .content {
@@ -68,7 +69,7 @@ table {
 }
 
 .main {
-	background-color: #EFE9E2;
+	background-color: var(--beige);
 }
 
 .title-pages{
@@ -117,7 +118,7 @@ table {
 }
 
 .title-home{
-    color: white;
+    color: var(--white);
     padding-bottom: 2rem;
     font-size: 3rem;
     font-family: de-walpergens-pica-sc, sans-serif;
@@ -132,7 +133,7 @@ table {
 }
 
 .arrowsdown {
-	color: white;
+	color: var(--white);
 }
 
 /* Arrow animation */
@@ -260,8 +261,8 @@ table {
 }
 
 .button-home{
-	background-color: #5A92AB;
-	color: white;
+	background-color: var(--blue);
+	color: var(--white);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -275,14 +276,14 @@ table {
 	margin-bottom: 1.5rem;
 }
 
-/* Footer */
+/* Footer (mobile) */
 
 .footer-main {
-	background-color: #8E1B33;
+	background-color: var(--red);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	color: #ffffff;
+	color: var(--white);
 	font-family: de-walpergens-pica, sans-serif;
 }
 
@@ -334,6 +335,12 @@ table {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	color: var(--black);
+}
+
+.some {
+	text-decoration: none;
+	color: var(--white);
 }
 
 .someleft {
@@ -346,7 +353,7 @@ table {
 
 .footercontact-text {
 	font-size: 0.8em;
-	color: #ffffff;
+	color: var(--white);
 	text-decoration: none;
 	margin-left: 0.2em;
 }
@@ -460,14 +467,15 @@ table {
 	flex-direction: row;
 	justify-content: space-between;
 	cursor: pointer;
-	background-color: #5A92AB;
-	color: white;
+	background-color: var(--blue);
+	color: var(--white);
 	font-family: europa;
 	font-weight: 300;
+	font-size: 1.3em;
 }
   
 .accordion-title:hover {
-	background-color: #5eafd4;
+	background-color: var(--blue);
 }
   
 .accordion-title, .accordion-content {
@@ -475,14 +483,16 @@ table {
 }
   
 .accordion-content {
-	background-color: white;
+	background-color: var(--white);
 	font-family: europa;
 	font-weight: 300;
+	font-size: 1.2em;
 	line-height: 1.5rem;
 }
 
 .link-care{
-	color: #5A92AB;
+	color: var(--blue);
+	text-decoration: underline;
 }
 
 /* SOME SAY ABOUT US PAGE */
@@ -490,14 +500,6 @@ table {
 .title-somesay{
 	margin: 4rem 0 1.5rem;
 	font-size: 2.5rem;
-}
-
-.review-container{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-auto-flow: row;
-	overflow-x: scroll;
-	gap: 20px;
 }
 
 .review-bloc{
@@ -508,16 +510,27 @@ table {
 	font-family:europa;
 	font-weight: 300;
 	margin: 2rem 0;
-	width: 24rem;
+}
+
+.review-container {
+	margin-bottom: 5em;
+}
+
+.ratingstars {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .review-name{
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .review-content{
-	margin:1rem 1.5rem 0 1.5rem;
+	margin: 1rem 1.5rem 0 1.5rem;
 	font-size: 1.2rem;
 	line-height: 1.5rem;
 }
@@ -545,10 +558,17 @@ table {
 .prizes-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	
+}
+
+.content-somesay {
+	overflow: hidden;
 }
 
 /* CONTACT PAGE */
+
+.contact-middle {
+	display: none;
+}
 
 .contact-container{
 	display: flex;
@@ -560,29 +580,32 @@ table {
 .title-contact{
 	margin: 1rem 0 1.5rem;
 	font-size: 2.5rem;
+	text-align: center;
 }
 
 .contact-single {
 	display: flex;
 	align-items: center;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
 }
 
 .mobile-contact{
-	color: #5A92AB;
+	color: var(--blue);
 }
 
 .contact-text {
 	font-size: 1.5em;
 	text-decoration: none;
-	margin-left: 0.2em;
-	color: #000000;
+	margin-left: 0.5em;
+	color: var(--black);
 	font-family: Europa;
 	font-weight: 300;
 }
 
 .container-video{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 2rem 0;
@@ -592,13 +615,18 @@ table {
 	width: 100%;
 }
 
-.contact-adress{
+.contact-address{
 	font-family: Europa;
 	font-weight: 300;
 	line-height: 2rem;
 	font-size: 1.5rem;
 	margin-bottom: 1.5rem;
 }
+
+.desktop {
+	display: none;
+}
+
 @media screen and (min-width: 768px) {
 
 	/* HOME DESKTOP */
@@ -663,14 +691,17 @@ table {
 
 	.button-home{
 		width: 25%;
-		margin-right: 3rem ;
+	}
+
+	#home-btn-left {
+		margin-right: 3rem;
 	}
 
 	.button-home:hover{
 		transition: .4s;
-		background-color: #EFE9E2;
-		border:5px solid #5A92AB;
-		color: black;
+		background-color: var(--beige);
+		border: 3px solid var(--blue);
+		color: var(--blue);
 	}
 
 	.price-section {
@@ -818,22 +849,132 @@ table {
 	}
 
 	.accordion-content{
-		font-size: 1.2rem;
+		font-size: 1.3em;
+		line-height: 1.4em;
 	}
 
 	.link-care:hover{
-		color: #B89461;
+		color: var(--link-hover);
 	}
 
 	/* SOME SAY ABOUT US PAGE */
-
-	::-webkit-scrollbar{
-		display: none;
-	}
 
 	.prizes-container{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
+
+	.reviews-section {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.review-name {
+		font-size: 2em;
+		margin: 0.7em 0;
+	}
+
+	.review-content {
+		font-size: 1.5em;
+	}
+
+	.review-container {
+		width: 70%;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+  		color: var(--black)!important;
+		size: 2em!important;
+	}
+
+	.content-awards {
+		margin: 2em 0;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.container-list-compet {
+		font-size: 1.5em;
+		line-height: 1.4em;
+		margin-bottom: 2em;
+	}
+
+	/* CONTACT desktop */
+
+	.desktop {
+		display: block;
+	}
+
+	.contact-container {
+		display: block;
+	}
+
+	.middleline {
+		display: block;
+		width: 0.1em;
+		height: 100%;
+		background-color: var(--link-hover);
+	}
+
+	.contact-page {
+		display: grid; 
+		grid-auto-columns: 1fr; 
+		grid-template-columns: 1fr 0.2fr 1fr; 
+		grid-template-rows: 1fr; 
+		gap: 0px 0px; 
+		grid-template-areas: 
+		"left middle right";
+		margin-top: 3em;
+		margin-bottom: 5em;
+	}
+
+	.contact-middle {
+		display: flex;
+		justify-content: center;
+		grid-area: middle;
+	}
+
+	.contact-left {
+		grid-area: left;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contact-right {
+		grid-area: right;
+		display: flex;
+		justify-content: center;
+	}
+
+	hr {
+		transform: rotate(90deg);
+	}
+
+	.video-contact {
+		width: 35em;
+	}
+
+	.btn-contact {
+		margin: 2em;
+		font-size: 1.4em;
+	}
+
+	.contact-text {
+		font-size: 2em;
+	}
+
+	.contact-address {
+		font-size: 2em;
+		line-height: 1.5em;
+	}
+
+	.contact-single {
+		margin-bottom: 3em;
+	}
+
 }

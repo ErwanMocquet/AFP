@@ -23,7 +23,7 @@ export default function NavBar() {
             </nav>
             <nav className="navbar-desktop">
                 <NavLink to='/portfolio' className="link-desktop">Portfolio</NavLink>
-                <NavLink to='/procedure' className='link-desktop'>Procedure & Care</NavLink>
+                <NavLink to='/procedure' className='link-desktop'>Procedures & Care</NavLink>
                 <Link to='/' className="desk-logo-center"><img src={logo} alt='HrOgFruTattoo' className="logo-desktop"></img></Link>
                 <div className="hider"></div>
                 <NavLink to='/somesay' className='link-desktop'>Some say about us</NavLink>

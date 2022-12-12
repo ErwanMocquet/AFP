@@ -6,7 +6,9 @@ import PortfolioPage from './pages/PortfolioPage';
 import ProcedurePage from './pages/ProcedurePage';
 import SomeSayPage from './pages/SomeSayPage';
 import ContactPage from './pages/ContactPage';
-import ConsultationPage from './pages/ConsultationPage';
+import ConsultationPageOne from './pages/ConsultationPageOne';
+import ConsultationPageTwo from './pages/ConsultationPageTwo';
+import ConsultationPageFinal from './pages/ConsultationPageFinal';
 //import NavBar from './components/NavBar';
 
 
@@ -20,7 +22,9 @@ function App() {
         <Route path='procedure' element={<ProcedurePage/>}/>
         <Route path='somesay' element={<SomeSayPage/>}/>
         <Route path='contact' element={<ContactPage/>}/>
-        <Route path='consultation' element={<ConsultationPage/>}/>
+        <Route path='consultation' element={<ConsultationPageOne />}/>
+        <Route path='consultationtwo' element={<ConsultationPageTwo />}/>
+        <Route path='consultationfinal' element={<ConsultationPageFinal />}/>
         <Route path='*' element={<Navigate to="/home"/>} />
       </Routes>
     </main>

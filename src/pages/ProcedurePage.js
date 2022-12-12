@@ -11,8 +11,8 @@ export default function ProcedurePage () {
                 <div className="container-main-care">
                     <h1 className="title-pages">PROCEDURES & CARE</h1>
                     <section className="accordion-container">
-                        {accordionData.map(({ title, content }) => (
-                            <Accordion title={title} content={content} />))}
+                        {accordionData.map(({ title, content, id }) => (
+                            <Accordion title={title} content={content} key={id} />))}
                     </section>
                 </div>
             </div>

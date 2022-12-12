@@ -54,7 +54,7 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section className="buttons-container">
-                    <Link to='/portfolio' className="button-home">My portfolio</Link>
+                    <Link to='/portfolio' className="button-home" id="home-btn-left">My portfolio</Link>
                     <Link to='/consultation' className="button-home">Book a meeting!</Link>
                 </section>
                 <section className="price-section">

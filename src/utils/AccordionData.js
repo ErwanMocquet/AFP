@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export const accordionData = [
     {
+      id: 1,
       title: 'Before you get tattoed',
       content:<div> Before coming to get your tattoo, we advise you to:<br></br>
       - Get a good night's sleep<br></br>
@@ -13,6 +14,7 @@ export const accordionData = [
       </div>
     },
     {
+      id: 2,
       title: 'Aftercare',
       content: <div>After you got your tattoo, we advise you to:<br></br>
       - Wash the area daily, it's very important that the area stays clean to allow you skin to heal correctly.<br></br>
@@ -21,11 +23,13 @@ export const accordionData = [
       - It's usually taking the skin 2 to 3 weeks to heal completely (may differ regarding the size and the area), so take good care of it during this period!</div>
     },
     {
+      id: 3,
       title: 'Hygiene at the studio',
-      content: <div>I use disinfectant / germicidal cleaning products throughout the studio and protect my tools and furniture with correct and approved disposable protection covers, thus reducing the risk of cross-contamination, ensuring that your tattoo is not affected by what and who I have been working with before.`</div>
+      content: <div>I use disinfectant / germicidal cleaning products throughout the studio and protect my tools and furniture with correct and approved disposable protection covers, thus reducing the risk of cross-contamination, ensuring that your tattoo is not affected by what and who I have been working with before.</div>
     },
     {
-        title: 'How to get in touch?',
-        content: <div>If you want to contact me, to talk about one of your projects or to set a meeting, You can click on this <Link to='/contact' className="link-care">link</Link>!</div>
+      id: 4,
+      title: 'How to get in touch?',
+      content: <div>If you want to contact me to talk about one of your projects or to set a meeting, click on this <Link to='/contact' className="link-care">link</Link>!</div>
     },
   ];
