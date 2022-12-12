@@ -26,6 +26,6 @@ export const accordionData = [
     },
     {
         title: 'How to get in touch?',
-        content: <div>If you want to contact me, to talk about one of your projects or just to set a meeting, You can click on this <Link to='/contact' className="link-care">link</Link>!</div>
+        content: <div>If you want to contact me, to talk about one of your projects or to set a meeting, You can click on this <Link to='/contact' className="link-care">link</Link>!</div>
     },
   ];

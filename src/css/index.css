@@ -485,6 +485,120 @@ table {
 	color: #5A92AB;
 }
 
+/* SOME SAY ABOUT US PAGE */
+
+.title-somesay{
+	margin: 4rem 0 1.5rem;
+	font-size: 2.5rem;
+}
+
+.review-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-flow: row;
+	overflow-x: scroll;
+	gap: 20px;
+}
+
+.review-bloc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family:europa;
+	font-weight: 300;
+	margin: 2rem 0;
+	width: 24rem;
+}
+
+.review-name{
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.review-content{
+	margin:1rem 1.5rem 0 1.5rem;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+.content-awards{
+	font-family: Europa;
+	font-weight: 300;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	margin: 2rem 1.5rem 0 1.5rem;
+}
+
+.container-list-compet{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 2rem 0;
+	font-size: 1.2rem;
+	font-family: Europa;
+	font-weight: 400;
+	line-height: 1.5rem;
+}
+
+.prizes-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+/* CONTACT PAGE */
+
+.contact-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title-contact{
+	margin: 1rem 0 1.5rem;
+	font-size: 2.5rem;
+}
+
+.contact-single {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.2em;
+}
+
+.mobile-contact{
+	color: #5A92AB;
+}
+
+.contact-text {
+	font-size: 1.5em;
+	text-decoration: none;
+	margin-left: 0.2em;
+	color: #000000;
+	font-family: Europa;
+	font-weight: 300;
+}
+
+.container-video{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+.video-contact{
+	width: 100%;
+}
+
+.contact-adress{
+	font-family: Europa;
+	font-weight: 300;
+	line-height: 2rem;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
 @media screen and (min-width: 768px) {
 
 	/* HOME DESKTOP */
@@ -690,5 +804,36 @@ table {
 
 	.underline {
 		text-decoration: underline;
+	}
+
+	/* PROCEDURES & CARE */
+
+	.accordion-container{
+		width: 50%;
+	}
+
+	.accordion-title{
+		padding: 20px;
+		font-size: 1.5rem;
+	}
+
+	.accordion-content{
+		font-size: 1.2rem;
+	}
+
+	.link-care:hover{
+		color: #B89461;
+	}
+
+	/* SOME SAY ABOUT US PAGE */
+
+	::-webkit-scrollbar{
+		display: none;
+	}
+
+	.prizes-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

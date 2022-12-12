@@ -44,8 +44,8 @@ export default function Footer () {
             <div className="footer-bottom">
                 <h2 className="footersome-heading">Social media:</h2>
                 <div className="footer-some">
-                    <InstagramIcon sx={{ fontSize: "4rem" }} className="someleft" />
-                    <FacebookIcon sx={{ fontSize: "4rem" }} className="someright" />
+                    <a href='https://www.instagram.com/hrogfru_tattoo/'><InstagramIcon sx={{ fontSize: "4rem" }} className="someleft" /></a>
+                    <a href='https://www.facebook.com/ronnifroberg/'><FacebookIcon sx={{ fontSize: "4rem" }} className="someright" /></a>
                 </div>
             </div>
         </div>
