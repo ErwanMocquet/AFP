@@ -397,6 +397,8 @@ table {
 
 #button3 {
 	grid-area: btn3;
+	width: 8em;
+	margin: auto;
 }
 
 #button4 {
@@ -413,7 +415,7 @@ table {
 	gap: 0px 0px; 
 	grid-template-areas: 
 	  "btn1 btn2"
-	  "btn3 btn4"; 
+	  "btn3 btn3"; 
 }
 
 .portfolio-content {
@@ -788,8 +790,14 @@ table {
 	}
 
 	/* PORTFOLIO DESKTOP */
+
+	#button3 {
+		margin: 0.5em;
+		width: auto;
+	}
 	
 	.portfolio-container {
+		margin-top: 5em;
 		display: grid; 
 		grid-auto-columns: 1fr; 
 		grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -830,7 +838,7 @@ table {
 	}
 
 	.portfolio-img {
-		width: 10em;
+		width: 15em;
 	}
 
 	.underline {
