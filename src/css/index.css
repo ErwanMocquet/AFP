@@ -237,7 +237,7 @@ table {
 	width: 85%;
 	display: flex;
 	margin: auto;
-	box-shadow: 10px 10px 10px 0 rgb(0, 0, 0, 0.5);
+	box-shadow: 3px 3px 8px 0 rgb(0, 0, 0, 0.5);
 }
 
 .bold-text{
@@ -416,10 +416,24 @@ table {
 
 /* Portfolio - image container */
 
+.img-portf-cont {
+	display: flex;
+	justify-content: center;
+}
+
+.modalbox {
+	width: 21em;
+	height: 21em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .portfolio-img {
 	width: 8em;
 	margin: auto;
 	margin-bottom: 1em;
+	cursor: pointer;
 }
 
 .portfolio-img-container {
@@ -432,6 +446,11 @@ table {
 	grid-template-areas: 
 	  ". ."
 	  ". ."; 
+}
+
+.portfolio-full-img {
+	margin: 0;
+	width: 19em;
 }
 
 /* PROCEDURES AND CARE PAGE */
@@ -986,6 +1005,19 @@ input[type="file"] {
 
 	.underline {
 		text-decoration: underline;
+	}
+
+	.modalbox {
+		width: 30em;
+		height: 30em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.portfolio-full-img {
+		margin: 0;
+		width: 28.5em;
 	}
 
 	/* PROCEDURES & CARE */
