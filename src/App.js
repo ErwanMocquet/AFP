@@ -25,7 +25,7 @@ function App() {
         <Route path='consultation' element={<ConsultationPageOne />}/>
         <Route path='consultationtwo' element={<ConsultationPageTwo />}/>
         <Route path='consultationfinal' element={<ConsultationPageFinal />}/>
-        <Route path='*' element={<Navigate to="/home"/>} />
+        <Route path='*' element={<Navigate to="/"/>} />
       </Routes>
     </main>
   );

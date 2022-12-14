@@ -39,7 +39,7 @@ export default function PortfolioPage () {
                     <div className="buttons-container-portfolio">
                         <button className="portfolio-btn underline" id="button1" onClick={showBW}>B & W</button>
                         <button className="portfolio-btn" id="button2" onClick={showColor}>Color</button>
-                        <button className="portfolio-btn" id="button3" onClick={showCoverup}>Coverup</button>
+                        <button className="portfolio-btn" id="button3" onClick={showCoverup}>Cover-up</button>
                     </div>
                     {portfolio}
                 </div>

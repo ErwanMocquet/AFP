@@ -76,6 +76,7 @@ table {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	margin: 5rem 0 2rem ;
 	font-family: de-walpergens-pica-sc, sans-serif ;
 	font-size: 1.8rem;
@@ -236,7 +237,7 @@ table {
 	width: 85%;
 	display: flex;
 	margin: auto;
-	box-shadow: 0px 5px 10px 0 rgb(0, 0, 0, 0.5);
+	box-shadow: 10px 10px 10px 0 rgb(0, 0, 0, 0.5);
 }
 
 .bold-text{
@@ -383,8 +384,9 @@ table {
 	border: none;
 	border-radius: 25px;
 	height: 2em;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	cursor: pointer;
+	width: 30%;
 }
 
 #button1 {
@@ -397,8 +399,6 @@ table {
 
 #button3 {
 	grid-area: btn3;
-	width: 8em;
-	margin: auto;
 }
 
 #button4 {
@@ -406,16 +406,8 @@ table {
 }
 
 .buttons-container-portfolio {
-	margin: 0 1em;
-	margin-bottom: 2em;
-	display: grid; 
-	grid-auto-columns: 1fr; 
-	grid-template-columns: 1fr 1fr; 
-	grid-template-rows: 1fr 1fr; 
-	gap: 0px 0px; 
-	grid-template-areas: 
-	  "btn1 btn2"
-	  "btn3 btn3"; 
+	display: flex;
+	margin: 2em 1em;
 }
 
 .portfolio-content {
@@ -627,6 +619,157 @@ table {
 
 .desktop {
 	display: none;
+}
+
+/* CONSULTATION PAGES */
+
+.form-consultation{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-label-form{
+	margin: 0.6em 0;
+}
+
+.label-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Europa;
+	font-weight: 300;
+	font-size: 1.2rem;
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+.labeldiv {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-form-small{
+	height: 50px;
+	width: 24em;
+	padding: 15px 20px;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 1px 3px 5px 0 rgb(0, 0, 0, 0.3);
+	resize: none;
+}
+
+.input-form-big{
+	height: 100px;
+	width: 24em;
+	padding: 12px 20px;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 1px 3px 5px 0 rgb(0, 0, 0, 0.3);
+	resize: none;
+}
+
+.buttons-form-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.buttons-form{
+	width: 150px;
+}
+
+.text-form{
+	font-family: de-walpergens-pica, sans-serif;
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+.formnext {
+	width: 6em;
+}
+
+.form-onecont {
+	display: flex;
+	flex-direction: column;
+	width: 10em;
+	font-size: 1.3em;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-cont{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	height: 80px;
+	width: 17em;
+	border-radius: 20px;
+	box-shadow: 1px 3px 5px 0 rgb(0, 0, 0, 0.3);
+}
+
+.icon-form{
+	color: var(--red);
+}
+
+::placeholder{
+	font-family: europa;
+	font-weight: 300;
+}
+
+/* Consultation - final stage */
+
+.consultation-final-cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.finalcontent {
+	height: 90vh;
+	display: flex;
+	width: 100%;
+}
+
+.final-img {
+	color: var(--blue);
+	margin: 0.4em 0;
+}
+
+.finaltext {
+	font-size: 1.5em;
+	font-family: Europa;
+	font-weight: 300;
+	text-align: center;
+	margin: 0 1em;
+}
+
+.final-button-cont {
+	margin: 3em 0;
+}
+
+.button-final {
+	width: 10em;
+	cursor: pointer;
+}
+
+.consultarea {
+    background-image: url('../img/background.png') ;
+    background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -846,7 +989,7 @@ table {
 	}
 
 	/* PROCEDURES & CARE */
-
+	
 	.accordion-container{
 		width: 50%;
 	}
@@ -985,4 +1128,25 @@ table {
 		margin-bottom: 3em;
 	}
 
+	/* Consultation desktop */
+
+	.button-final {
+		width: 10em;
+	}
+
+	.input-form-big:focus, .input-form-small:focus {
+		outline: none;
+	}
+
+	.buttons-form {
+		width: 6em;
+	}
+
+	.buttons-form-container {
+		justify-content: center;
+	}
+
+	#secondinp-btn {
+		margin-left: 1em;
+	}
 }

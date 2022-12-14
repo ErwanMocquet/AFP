@@ -58,7 +58,7 @@ export default function HomePage() {
                     <Link to='/consultation' className="button-home">Book a meeting!</Link>
                 </section>
                 <section className="price-section">
-                    <h1 className="sub-title">PRICE</h1>
+                    <h1 className="sub-title">PRICES</h1>
                     <div className="price-container">
                         <PricesSlider />
                     </div>
