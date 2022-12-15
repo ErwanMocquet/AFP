@@ -1,37 +1,42 @@
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import studiopic from '../img/studio-desktop.jpg';
+import DragonTattoo from '../img/prices/dragon-tattoo.png';
+import ButterflyTattoo from '../img/prices/butterfly-tattoo.jpg'
+import CloverTattoo from '../img/prices/clover-tattoo.png'
+import OwlTattoo from '../img/prices/owl-tattoo.jpg'
+import QueenOfHeart from '../img/prices/queen-of-heart-tattoo.jpg'
+import SleeveTattoo from '../img/prices/sleeve-tattoo.png'
 
 export default function PricesSlider() {
     return (
         <Carousel
             infiniteLoop="true"
-            useKeyboardArrows="true"
+            useKeyboardArrows="true"   
         >
                 <div>
-                    <img src={studiopic} alt="Price example" />
-                    <p className="legend">Price 1</p>
+                    <img src={CloverTattoo} alt="Price example" />
+                    <p className="legend">Price: 400 DKK</p>
                 </div>
                 <div>
-                    <img src={studiopic} alt="Price example" />
-                    <p className="legend">Price 2</p>
+                    <img src={QueenOfHeart} alt="Price example" />
+                    <p className="legend">Price: 1500 DKK</p>
                 </div>
                 <div>
-                    <img src={studiopic} alt="Price example" />
-                    <p className="legend">Price 3</p>
+                    <img src={ButterflyTattoo} alt="Price example" />
+                    <p className="legend">Price: ca. 2000 DKK</p>
                 </div>
                 <div>
-                    <img src={studiopic} alt="Price example" />
-                    <p className="legend">Price 4</p>
+                    <img src={OwlTattoo} alt="Price example" />
+                    <p className="legend">Price: 8000 DKK</p>
                 </div>
                 <div>
-                    <img src={studiopic} alt="Price example" />
-                    <p className="legend">Price 5</p>
+                    <img src={DragonTattoo} alt="Price example" />
+                    <p className="legend">Price: 9000 DKK</p>
                 </div>
                 <div>
-                    <img src={studiopic} alt="Price example" />
-                    <p className="legend">Price 6</p>
+                    <img src={SleeveTattoo} alt="Price example" />
+                    <p className="legend">Price: 20 000 DKK</p>
                 </div>
         </Carousel>
     )

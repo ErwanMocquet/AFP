@@ -2,7 +2,6 @@ import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
-import Video from '../img/screenshot-contact.png'
 import Footer from "../components/Footer";
 
 export default function ContactPage () {
@@ -37,14 +36,21 @@ export default function ContactPage () {
                                 <div className="middleline"></div>
                             </div>
                             <div className="contact-right">
-                                <div className="vid-address-cont">
-                                    <div className="container-video">
-                                        <img className="video-contact" src={Video} alt=""></img>
+                                <div className="map-address-cont">
+                                    <div className="container-map">
+                                        <div className="mapouter">
+                                            <div className="gmap_canvas">
+                                                <iframe className="gmap_canvas" src="https://maps.google.com/maps?q=ringvej%204-10&t=&z=15&ie=UTF8&iwloc=&output=embed"  title="map"></iframe>
+                                            </div>
+                                        </div>
                                     </div>
                                     <p className="contact-address">Viby Ringvej 4 - 10<br></br>8260 Viby J</p>
                                 </div>
                             </div>
                         </div>
+                </div>
+                <div className="video-contact-cont">
+                    <iframe className="video-contact" width="350" height="240" src="https://www.youtube.com/embed/Z9XMpq48Xjg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </div>
             <Footer/>

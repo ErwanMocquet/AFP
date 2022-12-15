@@ -6,10 +6,10 @@ export default function ConsultationPageOne () {
     return (
         <div className="main">
             <NavBar />
-            <div className="content consultarea">
-                <h1 className="title-pages">TELL ME WHAT YOU WANT </h1>
-                <FormFirst />
-            </div>
+                <div className="content consultarea">
+                    <h1 className="title-pages">TELL ME WHAT YOU WANT </h1>
+                    <FormFirst />
+                </div>
             <Footer />
         </div>
     )

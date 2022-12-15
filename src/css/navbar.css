@@ -96,7 +96,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   background-color: #8E1B33;
-  z-index: 9999;
+  z-index: 10;
 }
 
 .logo-desktop{

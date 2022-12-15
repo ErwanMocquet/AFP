@@ -1,8 +1,19 @@
 //import Rating from '@mui/material/Rating';
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import logo from '../img/logo.png';
 import ReviewsSlider from "../components/ReviewsSlider";
+import Award1 from '../img/awards/aw1.png'
+import Award2 from '../img/awards/aw2.png'
+import Award3 from '../img/awards/aw3.png'
+import Award4 from '../img/awards/aw4.png'
+import Award5 from '../img/awards/aw5.png'
+import Award6 from '../img/awards/aw6.png'
+import Award7 from '../img/awards/aw7.png'
+import Award8 from '../img/awards/aw8.png'
+import Award9 from '../img/awards/aw9.png'
+import Award10 from '../img/awards/aw10.png'
+import Award11 from '../img/awards/aw11.png'
+import Award12 from '../img/awards/aw12.png'
 
 export default function SomeSayPage () {
     return(
@@ -21,11 +32,19 @@ export default function SomeSayPage () {
                         Aarhus Tattoo Convention<br></br>
                         Nordic Ink</p>
                     </div>
-                    <div className='prizes-container'>
-                        <img src={logo} alt="Portfolio example" className="portfolio-img" />
-                        <img src={logo} alt="Portfolio example" className="portfolio-img" />
-                        <img src={logo} alt="Portfolio example" className="portfolio-img" />
-                        <img src={logo} alt="Portfolio example" className="portfolio-img" />
+                    <div className='award-img-container'>
+                        <img src={Award1} alt="Portfolio example" className="award-img" />
+                        <img src={Award2} alt="Portfolio example" className="award-img" />
+                        <img src={Award3} alt="Portfolio example" className="award-img" />
+                        <img src={Award4} alt="Portfolio example" className="award-img" />
+                        <img src={Award5} alt="Portfolio example" className="award-img" />
+                        <img src={Award6} alt="Portfolio example" className="award-img" />
+                        <img src={Award7} alt="Portfolio example" className="award-img" />
+                        <img src={Award8} alt="Portfolio example" className="award-img" />
+                        <img src={Award9} alt="Portfolio example" className="award-img" />
+                        <img src={Award10} alt="Portfolio example" className="award-img" />
+                        <img src={Award11} alt="Portfolio example" className="award-img" />
+                        <img src={Award12} alt="Portfolio example" className="award-img" />
                     </div>
                 </section>
             </div>

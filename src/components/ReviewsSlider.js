@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Rating from '@mui/material/Rating';
-//import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-//import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 export default function ReviewsSlider() {
@@ -12,7 +10,7 @@ export default function ReviewsSlider() {
     var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true
