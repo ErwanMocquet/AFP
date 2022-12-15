@@ -1,3 +1,5 @@
+// made by Erwan and Igor
+
 import NavBar from "../components/NavBar";
 import React from 'react';
 import { Link } from "react-router-dom";

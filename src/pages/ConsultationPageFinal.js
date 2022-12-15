@@ -1,3 +1,6 @@
+// made by Maggie and Igor
+// this page is the onboarding after submitting the form
+
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';

@@ -1,7 +1,12 @@
+// made by Igor
+
+// fetching the data for black and white images
+
 import { useEffect, useState } from "react";
 import PortfolioImg from "../components/PortfolioImg";
+import * as React from 'react';
 
-export default function PortfolioBW() {
+export default function PortfolioBW({loading}) {
 
     const [posts, setPosts] = useState([]);
 

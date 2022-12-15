@@ -1,3 +1,5 @@
+// made by Kate, Maggie, Erwan
+
 import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
 import PhoneIcon from '@mui/icons-material/Phone';

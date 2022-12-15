@@ -1,7 +1,11 @@
+// made by Erwan
+
 import NavBar from "../components/NavBar";
 import Accordion from "../components/Accordion";
 import {accordionData} from "../utils/AccordionData";
 import Footer from "../components/Footer";
+
+// on this page the accordion component is rendered
 
 export default function ProcedurePage () {
     return(

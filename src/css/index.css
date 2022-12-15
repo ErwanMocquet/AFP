@@ -452,6 +452,7 @@ table {
 .portfolio-full-img {
 	margin: 0;
 	width: 19em;
+	box-shadow: 3px 3px 8px 0 rgba(155, 154, 154, 0.5);
 }
 
 /* PROCEDURES AND CARE PAGE */

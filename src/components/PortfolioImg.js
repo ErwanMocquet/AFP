@@ -1,3 +1,7 @@
+// made by Igor and Erwan
+
+// the component for images for portfolio page - the modal is added and can be opened once user clicks on it
+
 import * as React from 'react';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';

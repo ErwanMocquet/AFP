@@ -1,4 +1,5 @@
-//import Rating from '@mui/material/Rating';
+// made by Erwan, Igor and Kate
+
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import ReviewsSlider from "../components/ReviewsSlider";

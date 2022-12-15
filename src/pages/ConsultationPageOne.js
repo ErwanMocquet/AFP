@@ -1,6 +1,10 @@
+// made by Maggie and Igor
+
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import FormFirst from "../components/FormFirst";
+
+// this is the first page of the consultation - it renders the first component of the form
 
 export default function ConsultationPageOne () {
     return (

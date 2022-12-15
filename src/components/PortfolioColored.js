@@ -1,3 +1,7 @@
+// made by Igor
+
+// fetching the data for colored images
+
 import { useEffect, useState } from "react";
 import PortfolioImg from "../components/PortfolioImg";
 

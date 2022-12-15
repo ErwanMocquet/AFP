@@ -1,3 +1,5 @@
+// this component allows the open each page on top when using the Router
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 

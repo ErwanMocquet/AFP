@@ -1,3 +1,5 @@
+// made by Igor
+
 import { Link, NavLink } from "react-router-dom"
 import logo from '../img/logo.png'
 

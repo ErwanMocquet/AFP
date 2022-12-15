@@ -1,3 +1,5 @@
+// made by Erwan
+
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -15,16 +17,16 @@ export default function PricesSlider() {
             useKeyboardArrows="true"   
         >
                 <div>
+                    <img src={ButterflyTattoo} alt="Price example" />
+                    <p className="legend">Price: ca. 2000 DKK</p>
+                </div>
+                <div>
                     <img src={CloverTattoo} alt="Price example" />
                     <p className="legend">Price: 400 DKK</p>
                 </div>
                 <div>
                     <img src={QueenOfHeart} alt="Price example" />
                     <p className="legend">Price: 1500 DKK</p>
-                </div>
-                <div>
-                    <img src={ButterflyTattoo} alt="Price example" />
-                    <p className="legend">Price: ca. 2000 DKK</p>
                 </div>
                 <div>
                     <img src={OwlTattoo} alt="Price example" />

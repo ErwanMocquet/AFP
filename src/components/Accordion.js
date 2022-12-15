@@ -1,3 +1,7 @@
+// made by Erwan
+
+// the component takes the data from './utils/AccordionData.js'
+
 import React, { useState } from 'react';
 
 const Accordion = ({ title, content }) => {

@@ -1,9 +1,13 @@
+// made by Igor
+
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import PortfolioColored from "../components/PortfolioColored";
 import PortfolioBW from "../components/PortfolioBW";
 import PortfolioCovers from "../components/PortfolioCovers";
 import { useState } from "react";
+
+// this is the portfolio page - three buttons trigger functions that render three different components that contain separate sections, currently clicked button gets class that indicates it as active
 
 export default function PortfolioPage () {
 
