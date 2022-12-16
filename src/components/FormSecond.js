@@ -1,4 +1,4 @@
-// made by Erwan
+// made by Erwan and Maggie
 
 import React from "react";
 import { Link } from "react-router-dom";
