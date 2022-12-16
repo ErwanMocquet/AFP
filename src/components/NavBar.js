@@ -24,12 +24,12 @@ export default function NavBar() {
                 </div>
             </nav>
             <nav className="navbar-desktop">
-                <NavLink to='/portfolio' className="link-desktop">Portfolio</NavLink>
-                <NavLink to='/procedure' className='link-desktop'>Procedures & Care</NavLink>
+                <NavLink to='/portfolio' className="link-desktop" activeclassname="active">Portfolio</NavLink>
+                <NavLink to='/procedure' className='link-desktop' activeclassname="active">Procedures & Care</NavLink>
                 <Link to='/' className="desk-logo-center"><img src={logo} alt='HrOgFruTattoo' className="logo-desktop"></img></Link>
                 <div className="hider"></div>
-                <NavLink to='/somesay' className='link-desktop'>Some say about us</NavLink>
-                <NavLink to='/contact' className='link-desktop'>Contact</NavLink>
+                <NavLink to='/somesay' className='link-desktop' activeclassname="active">Some say about us</NavLink>
+                <NavLink to='/contact' className='link-desktop' activeclassname="active">Contact</NavLink>
             </nav>
         </main>
     )

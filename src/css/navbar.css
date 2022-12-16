@@ -122,6 +122,10 @@ body {
   color: #B89461;
 }
 
+.active {
+  border-bottom: #B89461 1.2px solid;
+}
+
 
 /* ........ media query .......... */
 
